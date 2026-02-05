@@ -12,4 +12,7 @@ def test_login1():
     obj.Enter_password("vandana121123")
     obj.click_login()
     time.sleep(10)
+    print("closing browser")
     driver.close()
+
+
