@@ -11,6 +11,7 @@ def test_login1():
     obj.Enter_email("vandanaj1212@gmail.com")
     obj.Enter_password("vandana121123")
     obj.click_login()
+    driver.save_screenshot("Screenshots/login.png")
     time.sleep(10)
     driver.close()
 
