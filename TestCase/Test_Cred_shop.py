@@ -18,9 +18,9 @@ def test_shopping():
     obj.add_to_cart_xbos()
     time.sleep(10)
     driver.execute_script("window.scrollBy(0, 500);")
-    ele_d = obj.quantity_xbos(index=1)
-    drop_down = Select(ele_d)
-    drop_down.select_by_index(1)
+    obj.select_quantity_xbos(2)
+
+
     # drop_down.select_by_index(1)
     time.sleep(5)
     driver.execute_script("window.scrollBy(0, 500);")

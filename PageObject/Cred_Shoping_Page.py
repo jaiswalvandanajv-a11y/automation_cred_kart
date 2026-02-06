@@ -31,8 +31,10 @@ class Shopping():
     def add_to_cart_xbos(self):
         ele_add_xbos = self.driver.find_element(*self.xbos_addtocart_xpath).click()
 
-    def quantity_xbos(self,index):
+    def select_quantity_xbos(self,index=0):
         ele_quan_xbos = self.driver.find_element(*self.xbos_quan_xpath).click()
+        drop_down = Select(ele_quan_xbos)
+        drop_down.select_by_index(index)
 
     def validate_total(self):
         ele_total = self.driver.find_element(*self.total_xpath).text
